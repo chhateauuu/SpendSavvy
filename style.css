@@ -207,7 +207,9 @@ td:hover {
     cursor: pointer;
 }
 
-/* Footer Styles */
+
+
+/*Footer*/
 footer {
     background-color: rgba(53, 53, 130, 0.9);
     color: white;
@@ -239,7 +241,7 @@ footer a:hover {
 }
 
 .summary-card {
-  flex: 0 0 45%; /* gives a little space between cards */
+  flex: 0 0 45%; 
   text-align: center;
   padding: 20px;
   background-color: white;
@@ -266,5 +268,23 @@ footer a:hover {
 
 
 
-/*dropdown*/
 
+@media screen and (max-width: 768px) {
+  .summary {
+      flex-direction: column;
+  }
+
+  .expenses-list td, .expenses-list th {
+      padding: 5px;
+  }
+
+  .summary-card {
+      margin-bottom: 20px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .expenses-list td, .expenses-list th {
+      font-size: 14px; 
+  }
+}
