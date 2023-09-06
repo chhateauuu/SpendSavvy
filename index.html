@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>SpendSavvy</title>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#" class="logo">SpendSavvy</a>
+            
+        </div>
+    </nav>
+
+    <div class="input-section">
+        <label for="category-select">Category:</label>
+        <select id="category-select">
+            <option value="Food & Beverage">Food & Beverage</option>
+            <option value="Rent">Rent</option>
+            <option value="Transport">Transport</option>
+            <option value="Relaxing">Relaxing</option>
+        </select>
+
+        <label for="amount-input">Amount:</label>
+        <input type="number" id="amount-input">
+        <label for="date-input">Date:</label>
+        <input type="date" id="date-input">
+        <label for="transaction-type">Transaction:</label>
+    <select id="transaction-type">
+        <option value="expense">Expense</option>
+        <option value="earning">Earning</option>
+    </select>
+        <button id="add-btn">Add</button>
+
+    </div>
+
+    <div class="modal" id="transaction-modal">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <h3>Transaction Details</h3>
+            <p id="transaction-details"></p>
+        </div>
+    </div>
+
+
+    <div class="expenses-list">
+        <h2>Details</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Category</th>
+                    <th>Amount</th>
+                    <th>Date</th>
+                    <th>Delete</th>
+                </tr>
+            </thead>
+            <tbody id="expnese-table-body">
+
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td>Total:</td>
+                    <td id="total-amount"></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+            </tfoot>
+        </table>
+    </div>
+    <div class="summary">
+        <div class="summary-card" id="total-expenses-card">
+            <h3>Total Expenses</h3>
+            <p id="total-expenses">$0.00</p>
+        </div>
+        <div class="summary-card" id="total-earnings-card">
+            <h3>Total Earnings</h3>
+            <p id="total-earnings">$0.00</p>
+        </div>
+    </div>
+    <footer>
+        <p>&copy; Aaryabrat Chhatkuli. All rights reserved.</a></p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
