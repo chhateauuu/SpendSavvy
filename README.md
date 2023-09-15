@@ -18,3 +18,6 @@ UI State Management: Utilizes CSS and JavaScript to manage UI states for focused
 Minimalist Design: Leverages modern and minimalist design principles to ensure a clutter-free and straightforward user experience.
 
 This project serves as both a practical application of foundational web development concepts and a dive into more advanced principles, particularly around real-time user feedback and dynamic content generation.
+
+## License
+This project is open-source and available under the MIT License.
